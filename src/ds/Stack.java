@@ -38,8 +38,8 @@ public class Stack<T> {
     }
 
     void getElements() {
-        for (T elem : elements) {
-            System.out.println(elem);
+        for (int i = 0; i <= top; i++) {
+            System.out.println(elements[i]);
         }
     }
 
@@ -55,11 +55,8 @@ public class Stack<T> {
         }
 
         try {
-            s.pop();
-            s.pop();
-            s.pop();
-            s.pop();
-            s.pop();
+           var a =  s.pop();
+            System.out.println("banana:" + a);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
